@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+body{
+  margin: 0;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  height: 100vh;
+}
+
+.container{
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1{
+  margin: 1em 0;
+  text-transform: uppercase;
+  text-shadow: 3px 2px red !important;
+  color: white;
+}
+
+.bg{
+  background-image: url("/src/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg2{
+  background: linear-gradient(80deg, #408ed6 0%, #40d656 100%);
+  opacity: 0.8;
+}
+
+.logo {
+  width: 200px;
+}
+
+.left{
+  padding: 1em;
+}
+
+.left p {
+  color: white;
+  text-align: justify;
+  line-height: 1.7rem;
+}
+
+.right p {
+  margin: 2em 0 1em;
+  padding-left: 0.2em;
+}
+
+.right input, button {
+  width: calc(100% - 3em);
+  padding: 0.4em;
+  font-size: 1.3em;
+  outline: none;
+  margin: 0.1em;
+}
+
+button {
+  width: calc(100% - 2em);
+  background: linear-gradient(80deg, #40d656 0%, #408ed6 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.light {
+  color: rgba(255,255,255,.7) !important;
+}
+
+@media only screen and (min-width: 768px){
+
+  body{
+    font-size: 20px;
+  }
+
+  button{
+    width: 60% !important;
+  }
+
+  input{
+    width: calc(60% - 1em) !important;
+  }
+
+  h1{
+    margin: 0px;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-shadow: 3px 2px red;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+
+  .logo{
+    margin: 1em 0;
+  }
+
+  p{
+    line-height: 1.7em !important;
+  }
+
+  .inner {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .left{
+    text-align: left;
+    padding: 0em 2em;
+    height: 100vh;
+  }
+
+  .content{
+    margin-top: 10em;
+    padding: 0 2em;
+  }
+
+  .light{
+    margin-left: 0em;
+  }
+  h1{
+    margin: 0px;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-shadow: 3px 2px red;
+  }
+
+  .right{
+    text-align: left;
+    align-self: center;
+    padding: 0em 2em 1.5em;
+    justify-self: center;
+  }
+
+  input{
+    width: calc(100% - 1em) !important;
+    margin: 1em 0;
+  }
+
+  button{
+    width: 100% !important;
+  }
+}
