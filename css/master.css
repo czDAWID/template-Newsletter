@@ -20,7 +20,7 @@ h1{
 }
 
 .bg{
-  background-image: url("/src/bg.jpg");
+  background-image: url("../src/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
